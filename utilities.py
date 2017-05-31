@@ -24,3 +24,20 @@ def matchDeltaR(gen, recov, cut):
     minindex = -1
   
   return minindex
+
+def branchToList(branch):
+  out = []
+  for item in branch:
+    out.append(item)
+  return out 
+
+
+class Counter:
+  def __init__(self):
+    self.cuts = {}
+
+  def increment(self, step, weight=1.):
+    if step in self.cuts.keys():
+      self.cuts[step] += weight
+    else:
+      self.cuts[step] = weight  
