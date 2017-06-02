@@ -16,7 +16,8 @@ ROOT.gSystem.Load("libDelphes")
 outfile = sys.argv[1]
 
 samples = [
-          ['../delphes/test.root', "WW_PU200", 3387.],
+          ['/eos/cms/store/user/lenzip/ERCLaVendetta/pythia8_14TeV_WWTo2L2Nu__CMS_PhaseII_Substructure_PIX4022_200PU/total.root', "WW_PU200", 3387.],
+          ['/eos/cms/store/user/lenzip/ERCLaVendetta/pythia8_14TeV_WWTo2L2Nu__CMS_PhaseII_Substructure_PIX4022_200PU_timing20/total.root', 'WW_PU200_timing20ps', 3387.]
           ]
 
 plotList = [

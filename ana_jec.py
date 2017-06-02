@@ -28,7 +28,7 @@ numberOfEntries = treeReader.GetEntries()
 
 # Get pointers to branches used in this analysis
 genJets = treeReader.UseBranch("GenJet") 
-trkJets = treeReader.UseBranch("TrackJet") 
+trkJets = treeReader.UseBranch("Jet") 
 verbose=False
 
 outf = ROOT.TFile(outfile, "RECREATE")
